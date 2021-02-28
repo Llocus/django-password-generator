@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<link href="{% static "css/estilo.css" %}" rel="stylesheet">
+    <title>Senha Gerada!</title>
+</head>
+<body>
+<h1 style="text-align: center;">A senha é:</h1>
+<br><br><br><br>
+<p class="line-1 anim-typewriter" id="copia">{{ senha }}</p> 
+<br><br><br><br><br><br><br><br>
+<form style="padding-left: 42%">
+    <a href="{% url 'index' %}" style="font-size: 23px; color: aqua;">Inicio</a>
+    <a href="" style="font-size: 23px; padding-left: 5%; color: aqua;">Nova Senha</a>
+</form>
+</body>
+</html>
